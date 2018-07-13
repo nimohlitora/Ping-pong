@@ -1,19 +1,3 @@
-//user interface logic
-
-$(document).ready(function(){
-    $("form#ping-pong").submit(function(){
-       event.preventDefault();
-       var number = parseInt($("input#number").val());
-        
-       pingPong(number);
-        
-       numbersToBePingponged.forEach(function(number){
-          $("#output").append('<li>' + number + "</li>"); 
-       });
-    }); 
- });
-
-
  //business logic
  
 var numbersToBePingponged = [];
@@ -27,10 +11,25 @@ function pingPong (number){
             numbersToBePingponged.push("pong");
         }
         else if(index % 3 === 0){
-            numbersToBePingponged.push("ping");
+            numbersToBePingponged.push("ping")
         }
         else{
             numbersToBePingponged.push(index);
         }
     }
-}
+    return numbersToBePingponged;
+};
+//user interface logic
+
+$(document).ready(function(){
+    $("form#ping-pong").submit(function(event){
+       event.preventDefault();
+       var number = parseInt($("input#number").val());
+        
+       pingPong(number);
+        
+       numbersToBePingponged.forEach(function(number){
+          $("#output").append('<li>' + number + "</li>"); 
+       });
+    }); 
+ });
