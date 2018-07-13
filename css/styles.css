@@ -1,0 +1,90 @@
+
+body{
+    margin: 0%;
+    background-color: rgb(103, 109, 110);
+    background-size: cover;
+}
+p{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+li{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.media{
+    height: 900px;
+    width:100%;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: -70px;
+}
+.overlay{
+    margin: auto;
+    width: 200%;
+    height: 900px;
+    background-image: url('../img/club p.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover
+
+}
+#start{
+    padding-top: 50px;
+    margin-left: 55%;
+}
+.name{
+    padding-top: 0;
+    text-align: center;
+    text-transform:uppercase;
+    color: rgb(15, 3, 14);
+    font-size: 100px;
+}
+.bg-1{
+	padding: 0;
+}
+.side{
+	color: blue;
+	padding: 0;
+     background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.bttn{
+    background-color: 	#01f80d;
+    color: powderblue;
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	margin-left: 30px; 
+}
+.bttn:hover{
+	box-shadow: 0 14px 28px rgba(27, 105, 4, 0.25), 0 10px 10px rgba(173, 36, 36, 0.22);
+}
+input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(209, 15, 199);
+    border-radius: 4px;
+    box-sizing: border-box;
+	background-color: rgb(231, 139, 216);
+}
+.content{
+	padding: 10%;
+    text-align: right;
+    font-family: 'Hind Siliguri', Open Sans;
+}
